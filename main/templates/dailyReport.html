@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- {% block meta %}
+    {% endblock meta %} -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .title {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            /* Set the width of the table */
+            margin-top: 20px;
+            /* Add some space at the top for better visibility */
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body style="padding: 20px;">
+
+    <h1 class="title">{{ title }}</h1>
+    <hr>
+
+    <div class="mb-2 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Child Name :</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="mb-2 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Child Phone number :</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+
+    <br>
+
+    <td><a href="/daily-report-form" class="btn btn-outline-dark" role="button">Add</a></td>
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Activity Report</th>
+                <th>Eating Report</th>
+                <th>Photo Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>
+                    ...
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div style="text-align: center;">
+        <td><a href="/child-in-class" class="btn btn-dark" role="button">BACK</a></td>
+    </div>
+</body>
+
+</html>
